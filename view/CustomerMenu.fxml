@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerMenuController">
+   <children>
+      <Button fx:id="backButton" layoutX="682.0" layoutY="347.0" mnemonicParsing="false" onAction="#backButtonAction" text="Back" />
+      <TableView fx:id="customerTable" layoutX="38.0" layoutY="70.0" prefHeight="190.0" prefWidth="668.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="41.599971771240234" text="ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="124.00003051757812" text="Name" />
+            <TableColumn fx:id="addressColumn" prefWidth="125.60005187988281" text="Address" />
+            <TableColumn fx:id="postalCodeColumn" prefWidth="131.20001220703125" text="Postal Code" />
+            <TableColumn fx:id="stateProvinceColumn" prefWidth="133.60003662109375" text="State/Province" />
+            <TableColumn fx:id="phoneColumn" prefWidth="107.20001220703125" text="Phone" />
+        </columns>
+      </TableView>
+      <Label layoutX="38.0" layoutY="25.0" prefHeight="38.0" prefWidth="354.0" text="Customer Menu">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button id="addCustomerButton" fx:id="addCustomerButton" layoutX="87.0" layoutY="315.0" mnemonicParsing="false" onAction="#addCustomerButtonAction" text="Add" />
+      <Button id="updateCustomerButton" fx:id="updateCustomerButton" layoutX="157.0" layoutY="315.0" mnemonicParsing="false" onAction="#updateCustomerButtonAction" text="Update" />
+      <Button id="deleteCustomerButton" fx:id="deleteCustomerButton" layoutX="237.0" layoutY="315.0" mnemonicParsing="false" onAction="#deleteCustomerButtonAction" text="Delete" />
+      <Label id="customerLabel" fx:id="customerLabel" layoutX="87.0" layoutY="281.0" prefHeight="26.0" prefWidth="98.0" text="Customers">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Line endX="-19.30706787109375" endY="0.29290771484375" layoutX="322.0" layoutY="294.0" startX="-136.59999084472656" startY="0.20001220703125" stroke="#9a9a9a" />
+      <Line endX="-22.79998779296875" layoutX="325.0" layoutY="361.0" startX="-255.40000915527344" stroke="#9a9a9a" />
+      <Line endX="-143.5999755859375" endY="66.0" layoutX="447.0" layoutY="295.0" startX="-143.59999084472656" stroke="#9a9a9a" />
+      <Line endX="-22.900009155273438" endY="7.5" layoutX="92.0" layoutY="353.0" startX="-23.700027465820312" startY="-58.5" stroke="#9a9a9a" />
+      <Line endX="-163.2000274658203" layoutX="232.0" layoutY="294.0" startX="-151.1999969482422" stroke="#9a9a9a" />
+      <Button id="viewSelectedApptButton" fx:id="viewSelectedApptButton" layoutX="448.0" layoutY="315.0" mnemonicParsing="false" onAction="#viewSelectedApptButtonAction" text="View Selected" />
+      <Button id="viewAllApptButton" fx:id="viewAllApptButton" layoutX="563.0" layoutY="315.0" mnemonicParsing="false" onAction="#viewAllApptButtonAction" text="View All" />
+      <Label layoutX="448.0" layoutY="281.0" prefHeight="22.0" prefWidth="106.0" text="Appointments">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Line endX="-50.30706787109375" endY="0.29290771484375" layoutX="690.0" layoutY="293.0" startX="-126.79998779296875" startY="0.29290771484375" stroke="#9a9a9a" />
+      <Line endX="-26.30706787109375" endY="0.70709228515625" layoutX="666.0" layoutY="360.0" startX="-236.89288330078125" startY="0.70709228515625" stroke="#9a9a9a" />
+      <Line endX="-143.5999755859375" endY="66.0" layoutX="784.0" layoutY="294.0" startX="-143.59999084472656" stroke="#9a9a9a" />
+      <Line endX="-143.5999755859375" endY="66.0" layoutX="572.0" layoutY="294.0" startX="-142.80706787109375" startY="-2.5" stroke="#9a9a9a" />
+      <Line endX="-165.30706787109375" layoutX="595.0" layoutY="292.0" startX="-151.1999969482422" stroke="#9a9a9a" />
+   </children>
+</AnchorPane>
