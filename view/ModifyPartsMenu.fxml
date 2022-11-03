@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyPartsMenuController">
+    <children>
+        <Label layoutX="22.0" layoutY="24.0" text="Modify Part">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <RadioButton id="inHouse" fx:id="inHouseBtn" layoutX="141.0" layoutY="28.0" mnemonicParsing="false" onAction="#inHouseBtnAction" text="In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="radioGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton id="outsourced" fx:id="outsourcedBtn" layoutX="261.0" layoutY="28.0" mnemonicParsing="false" onAction="#outsourcedBtnAction" selected="true" text="Outsourced" toggleGroup="$radioGroup" />
+      <TextField id="idTextBox" fx:id="idTextBox" disable="true" layoutX="187.0" layoutY="68.0" promptText="Auto Gen - Disabled" />
+      <TextField id="nameTextBox" fx:id="nameTextBox" layoutX="187.0" layoutY="111.0" promptText="Part Name" />
+      <TextField id="invTextBox" fx:id="invTextBox" layoutX="187.0" layoutY="155.0" promptText="Inv" />
+      <TextField id="priceTextBox" fx:id="priceTextBox" layoutX="187.0" layoutY="200.0" promptText="Price/Cost" />
+      <TextField id="maxTextBox" fx:id="maxTextBox" layoutX="187.0" layoutY="245.0" prefHeight="26.0" prefWidth="70.0" promptText="Max" />
+      <TextField id="minTextBox" fx:id="minTextBox" layoutX="317.0" layoutY="246.0" prefHeight="26.0" prefWidth="70.0" promptText="Min" />
+      <TextField id="companyTextBox" fx:id="companyMachineTextBox" layoutX="187.0" layoutY="291.0" promptText="Company Name" />
+      <Label id="idLabel" layoutX="56.0" layoutY="72.0" text="ID" />
+      <Label id="nameLabel" layoutX="54.0" layoutY="115.0" text="Name" />
+      <Label id="invLabel" layoutX="56.0" layoutY="159.0" text="Inv" />
+      <Label id="priceLabel" layoutX="56.0" layoutY="204.0" text="Price/Cost" />
+      <Label id="maxLabel" layoutX="58.0" layoutY="251.0" text="Max" />
+      <Label id="minLabel" layoutX="272.0" layoutY="250.0" text="Min" />
+      <Label id="companyMachineLabel" fx:id="companyMachineLabel" layoutX="58.0" layoutY="295.0" text="Company Name" />
+      <Button id="savePartBtn" layoutX="276.0" layoutY="345.0" mnemonicParsing="false" onAction="#partsSaveBtnAction" text="Save" />
+      <Button id="cancelPartBtn" layoutX="343.0" layoutY="345.0" mnemonicParsing="false" onAction="#partsCancelBtnAction" text="Cancel" />
+    </children>
+</AnchorPane>
